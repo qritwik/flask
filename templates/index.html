@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  </head>
+  <body style="background: #eeeeee">
+
+
+
+
+
+
+ <div class='brand'>
+  <a href="http://www.textmercato.com/" target='_blank'>
+    <img src="http://www.textmercato.com/newimages/logo.png" alt="" style="margin:auto 0 auto; display:block;" />
+  </a>
+</div>
+<div class='login'>
+  <div class='login_title'>
+    <span>Login to your account</span>
+  </div>
+  <div class='login_fields'>
+    <form method="post">
+    <div class='login_fields__user'>
+      <div class='icon'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
+      </div>
+      <input placeholder='Username' type='text' name="username">
+        <div class='validation'>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+        </div>
+      </input>
+    </div>
+    <div class='login_fields__password'>
+      <div class='icon'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png'>
+      </div>
+      <input placeholder='Password' type='password' name="password">
+      <div class='validation'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+      </div>
+    </div>
+    <div class='login_fields__submit'>
+      <input type='submit' value='Log In'>
+      <div class='forgot'>
+        <a href='#'>Forgotten password?</a>
+      </div>
+    </div>
+    </form>
+  </div>
+
+
+</div>
+<div class='authent'>
+  <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/puff.svg'>
+  <p>Authenticating...</p>
+</div>
+<div class='love'>
+  <p style="color :#212121">Made with <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/love_copy.png" /> by <a href='https://play.google.com/store/apps/developer?id=Infonium+Labs+Inc.' target='_blank' style="color :#212121"> Text Mercato</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

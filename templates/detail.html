@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Detail</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.js"></script>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	 <style>
+body {
+    font-family: Arial;
+
+}
+
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+	width: 700px;
+	margin: 0 auto;
+	padding-top: 5%;
+
+
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 12.5%;
+}
+
+
+.splitl {
+    height: 100%;
+    width: 66%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.splitr {
+    height: 100%;
+    width: 34%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    background-color: #ffffff;
+}
+
+.right {
+    right: 0;
+    background-color: #f5f5f5;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+		margin-top: 5%;
+}
+
+.splitlu {
+    height: 70%;
+    width: 100%;
+
+		background: #ffffff;
+}
+
+.splitlm {
+    height: 5%;
+    width: 100%;
+		display: -webkit-flex;
+    display: flex;
+
+		background: #fcfcfc;
+}
+
+
+
+
+
+.splitld {
+    height: 5%;
+    width: 100%;
+
+		background: #eeeeee;
+}
+
+.m1{
+	-webkit-flex: 1;
+ -ms-flex: 1;
+ flex: 1;
+ background: #fafafa;
+ padding: 20px;
+
+}
+
+
+.m2{
+	-webkit-flex: 1;
+ -ms-flex: 1;
+ flex: 1;
+ background: #fbfbfb;
+ padding: 20px;
+
+}
+
+.m3{
+	-webkit-flex: 1;
+ -ms-flex: 1;
+ flex: 1;
+ background: #fcfcfc;
+ padding: 20px;
+
+}
+
+</style>
+
+</head>
+<body style="background: #35394a">
+
+
+    <div class="ui fixed attached stackable menu" style="background:#35384b; height:7%;">
+  <div class="ui container">
+
+		<a class="item" style="color:#006f94;">
+	    <img src="http://www.textmercato.com/newimages/logo.png" alt="" style="margin:auto 0 auto; display:block;" />
+	  </a>
+
+
+
+
+
+  </div>
+
+  <div class="right item">
+
+    <a class="item" style="color:#ffffff;" href="">
+      <i class="user icon" style="color:##ffffff;"></i>Welcome, {{name}}</a>
+
+
+
+
+
+      <a class="item" style="color:#ffffff;" href="{{ url_for('login') }}">
+        <i class="power off icon" style="color:#ffffff;"></i></a>
+
+
+
+
+
+
+
+
+
+    </div>
+
+</div>
+
+
+
+<div class="splitl left">
+
+
+<div class="splitlu">
+
+	<div class="container">
+
+	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="{{ url_for('static', filename='images/1.jpg') }}" class="img-fluid">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="{{ url_for('static', filename='images/2.jpg') }}" class="img-fluid">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="{{ url_for('static', filename='images/3.jpg') }}" class="img-fluid">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="{{ url_for('static', filename='images/4.jpg') }}" class="img-fluid">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="{{ url_for('static', filename='images/6.jpg') }}" class="img-fluid">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="{{ url_for('static', filename='images/a.jpeg') }}" class="img-fluid">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="{{ url_for('static', filename='images/bra.jpg') }}" class="img-fluid">
+	  </div>
+
+	  <div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="{{ url_for('static', filename='images/lounge.jpg') }}" class="img-fluid">
+	  </div>
+</div>
+</div>
+
+<form method="post">
+
+
+
+<div class="splitlm">
+
+<div class="m1">
+
+
+<input type="file" name="pic" accept="image/*">
+
+
+
+</div>
+
+
+<div class="m2">
+
+	<div class="ui input">
+	  <input type="text" placeholder="Search...">
+	</div>
+
+</div>
+
+<div class="m3">
+
+	<button type="submit" class="ui button">
+	  Upload
+	</button>
+
+	</form>
+
+
+
+
+
+</div>
+
+</div>
+
+
+<div class="splitld">
+	<div class="row">
+	<div class="column">
+		<img class="demo cursor" src="{{ url_for('static', filename='images/1.jpg') }}" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+	</div>
+	<div class="column">
+		<img class="demo cursor" src="{{ url_for('static', filename='images/2.jpg') }}" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+	</div>
+	<div class="column">
+		<img class="demo cursor" src="{{ url_for('static', filename='images/3.jpg') }}" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+	</div>
+	<div class="column">
+		<img class="demo cursor" src="{{ url_for('static', filename='images/4.jpg') }}" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+	</div>
+	<div class="column">
+		<img class="demo cursor" src="{{ url_for('static', filename='images/6.jpg') }}" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+	</div>
+	<div class="column">
+		<img class="demo cursor" src="{{ url_for('static', filename='images/a.jpeg') }}" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+	</div>
+	<div class="column">
+		<img class="demo cursor" src="{{ url_for('static', filename='images/bra.jpg') }}" style="width:100%" onclick="currentSlide(7)" alt="Snowy Mountains">
+	</div>
+	<div class="column">
+		<img class="demo cursor" src="{{ url_for('static', filename='images/lounge.jpg') }}" style="width:100%" onclick="currentSlide(8)" alt="Snowy Mountains">
+	</div>
+</div>
+
+</div>
+
+
+
+
+
+
+	</div>
+
+</div>
+
+<div class="splitr right">
+  <div class="centered">
+
+    <h2>John Doe</h2>
+    <p>Some text here too.</p>
+  </div>
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+</body>
+</html>
